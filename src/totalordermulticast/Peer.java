@@ -12,6 +12,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.concurrent.Executor;
 
 /**
  *
@@ -72,13 +73,7 @@ private ServerSocket serverSocket;
         this.myport = myport;
     }
 
-    public Stato getStato() {
-        return stato;
-    }
-
-    public void setStato(Stato stato) {
-        this.stato = stato;
-    }
+ 
 
     public HashSet<Integer> getConnection() {
         return connection;
